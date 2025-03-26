@@ -10,7 +10,7 @@ import java.time.Duration;
 
 public class Logout extends BaseDriver {
     @Test
-    public void Test3() {
+    public void Test3() throws InterruptedException {
         driver.get("https://demowebshop.tricentis.com/");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         Actions actions = new Actions(driver);
@@ -51,5 +51,7 @@ public class Logout extends BaseDriver {
 
         Assert.assertFalse(isLogoutVisible);
         Assert.assertTrue(isLoginVisible);
+
+        TearDown();
     }
 }
