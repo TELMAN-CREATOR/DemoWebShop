@@ -13,7 +13,6 @@ public class NegativeUsingCouponsAndGiftCards extends BaseDriver {
 
     @Test
     public void Test1() throws InterruptedException {
-
         driver.get("https://demowebshop.tricentis.com/");
 
         Actions actions = new Actions(driver);
