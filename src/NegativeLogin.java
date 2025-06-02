@@ -20,5 +20,6 @@ public class NegativeLogin extends BaseDriver {
         Assert.assertTrue(errorMessage.getText().contains("Login was unsuccessful."));
 
         TearDown();
+
     }
 }
